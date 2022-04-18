@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JNL Shop</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+  <header class="container-fluid bg-black position-sticky top-0 ">
+    <ul class="nav nav-pills mb-1 py-1 container" id="pills-tab" role="tablist">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.jpg" width="50"> JNL Shop
+      </a>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="true">Tienda</button>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index1.html">Ferrari</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index2.html">Bugatti</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="index3.html">Ducati</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index4.html">Suzuki</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito de compras</button>
+      </li>
+   
+    </ul>
+  </header>
+    
+  
+   <!----alertas----->
+   <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+     Producto añadido al carrito!
+  </div>
+
+  <!----inicio contenido-->
+  <div class="tab-content" id="pills-tabContent">
+   
+<!----BOOTON 2-->
+    <div class="tab-pane fade show active" 
+    id="pills-profile"
+    role="tabpanel"
+     aria-labelledby="pills-profile-tab">
+
+         <!-------carrusel----->
+         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="background-color: black">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/precentacion.jpeg" height="250" width="100" class="d-block w-100" alt="programacion">
+            </div>
+            <div class="carousel-item">
+              <img src="img/precentacion2.jpeg" height="250" width="100" class="d-block w-100" alt="programacion">
+            </div>
+            <div class="carousel-item">
+              <img src="img/precentacion3.jpeg" height="250" width="100" class="d-block w-100" alt="programacion">
+            </div>
+            <div class="carousel-item">
+              <img src="img/precentacion4.png" height="250" width="100" class="d-block w-100" alt="programacion">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <header>
+        <h1><b>Choose your best option!!</b></h1>
+    	</header>
+
+     <!-----primera pantalla------>
+  <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+    <!---PRODUCTO 1---------->
+    <div class="col d-flex justify-content-center mb-4">
+      <div class="card shadow mb-1 bg-dark rounded" style="width: 22rem;">
+          <h5 class="card-title pt-2 text-center text-primary">BUGATTI La Voiture Noire</h5>
+        <img src="./img/bugatti.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="Detalle1.html"  style="background: dark">Detalles</a>
+          &nbsp;
+          <h5 class="text-primary">Precio: <span class="precio">$ 239707994</span></h5>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary button ">Añadir a carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---PRODUCTO 1---------->
+    <div class="col d-flex justify-content-center mb-4">
+      <div class="card shadow mb-1 bg-dark rounded" style="width: 22rem;">
+          <h5 class="card-title pt-2 text-center text-primary">FERRARI SF90 Spider</h5>
+        <img src="./img/ferrari.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="detalle2.html" style="background: dark">Detalles</a>
+          &nbsp;
+          <h5 class="text-primary">Precio: <span class="precio">$ 11500000</span></h5>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary button ">Añadir a carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---PRODUCTO 1---------->
+  <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+    <div class="col d-flex justify-content-center mb-4">
+      <div class="card shadow mb-1 bg-dark rounded" style="width: 22rem;">
+          <h5 class="card-title pt-2 text-center text-primary">DUCATI panigale</h5>
+        <img src="./img/ducati.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="Detalle3.html" style="background: dark">Detalles</a>
+          &nbsp;
+          <h5 class="text-primary">Precio: <span class="precio">$ 86475</span></h5>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary button">Añadir a carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---PRODUCTO 1---------->
+
+    <div class="col d-flex justify-content-center mb-4">
+      <div class="card shadow mb-1 bg-dark rounded" style="width: 22rem;">
+          <h5 class="card-title pt-2 text-center text-primary">SUZUKI</h5>
+        <img src="./img/suzuki.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="Detalle4.html" style="background: darck">Detalles</a>
+          &nbsp;
+          <h5 class="text-primary">Precio: <span class="precio">$ 424390</span></h5>
+          <div class="d-grid gap-3">
+            <button class="btn btn-primary button ">Añadir a carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <!-------Carrito -->
+    <div 
+    class="tab-pane fade  carrito"
+     id="pills-contact"
+      role="tabpanel"
+       aria-labelledby="pills-contact-tab">
+ <!----tabla------>
+        <header>
+         <h2>Carrito de compras</h2>
+       </header>
+       <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class=" tbody">
+
+        </tbody>
+      </table>
+
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-black">Total: 0</h3>
+        </div>
+          <a href="pago/index.php" type="button" class="btn btn-primary" >COMPRAR</a>
+      </div>
+      </div>
+    </div>
+  </div>
+<br>
+  <!---------FOOTER--------------------------------->
+  <footer class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="img/logo.jpg" width="80"
+              alt="logo"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">Calle Barrio 2 Caminos Num. 22 </li>
+            <li class="mb-2">Col Barrio 2 Caminos, Chicontepec, Ver.CP. 92709</li>
+            <li class="mb-2">+1 (2) 345 6789</li>
+            <li class="mb-2">+1 (2) 345 6789</li>
+            <li class="mb-2">difusion@chicontepec.tecnm.mx</li>
+          </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">Galleries</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" style="color: aqua" href="index1.html">Ferrari</a></li>
+            <li class="mb-3"><a class="text-color" style="color: aqua" href="index2.html">Bugatti</a></li>
+            <li class="mb-3"><a class="text-color" style="color: aqua" href="index3.html">Ducati</a></li>
+            <li class="mb-3"><a class="text-color" style="color: aqua" href="index4.html">Suzuki</a></li>
+          </ul>
+        </div>
+
+        <!-- support -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">Collaborators:</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><i><a style="color: aqua">Sr. Jorge Cruz Cruz</a></i></li>
+            <li class="mb-3"><i><a style="color: aqua">Sr. Nemesio Duran Alarcon</a></i></li>
+            <li class="mb-3"><i><a style="color: aqua">Srta. Luz Itssel Sanchez Osorio</a></i></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">contacts</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" style="color: aqua" href="#">Tel. 789-137-123-59</a></li>
+            <li class="mb-3"><a class="text-color" style="color: aqua" href="#">Tel. 746-183-92-12</a></li>
+            <li class="mb-3"><a class="text-color" style="color: aqua" href="#">Tel. 746-293-78-34</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright py-4 bg-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 text-sm-left text-center">
+            <p class="mb-0">Copyright
+              <script>
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)
+              </script>
+              <a>© JNL Shop.itsch.com.mx</a>
+            </p> All Rights Reserve.
+          </div>
+          <div class="col-sm-5 text-sm-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="d-inline-block p-2"
+                  href="https://es-la.facebook.com/TecChicontepec/"><i class="ti-facebook text-primary"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block p-2"
+                  href="https://www.instagram.com/tecnmcampuschicontepec/"><i class="ti-instagram text-primary"></i></a>
+              </li>
+              <li class="list-inline-item"><a class="d-inline-block p-2" href="https://dribbble.com/themefisher"><i
+                    class="ti-dribbble text-primary"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>
