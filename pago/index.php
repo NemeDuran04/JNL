@@ -83,9 +83,9 @@ if (isset($_POST['submitPayment'])) {
     $consumerlng = '001';
     $transactionType = '0';
     //$urlMerchant = 'https://www.jose-aguilar.com/scripts/php/redsys-pago-con-tarjeta/'; //cambiar este dato
-    $urlMerchant = 'http://JNL/index.php'; //cambiar este dato
-    $urlweb_ok = 'http://JNL/pago/tpv_ok.php'; //cambiar este dato
-    $urlweb_ko = 'http://JNL/pago/tpv_ko.php'; //cambiar este dato
+    $urlMerchant = 'https://www.jose-aguilar.com/scripts/php/redsys-pago-con-tarjeta/index.php'; //cambiar este dato
+    $urlweb_ok = 'https://www.jose-aguilar.com/scripts/php/redsys-pago-con-tarjeta/tpv_ok.php'; //cambiar este dato
+    $urlweb_ko = 'https://www.jose-aguilar.com/scripts/php/redsys-pago-con-tarjeta/tpv_ko.php'; //cambiar este dato
 
     $miObj->setParameter("DS_MERCHANT_AMOUNT", $amount);
     $miObj->setParameter("DS_MERCHANT_CURRENCY", $currency);
