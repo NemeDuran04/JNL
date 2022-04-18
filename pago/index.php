@@ -70,7 +70,7 @@ if (isset($_POST['submitPayment'])) {
 
     //$url_tpv = 'https://sis.redsys.es/sis/realizarPago';
     $url_tpv = 'https://sis-t.redsys.es:25443/sis/realizarPago';  //https://sis-t.redsys.es:25443/sis/realizarPago
-    //$url_tpv = 'http://localhost/pago/index.php';
+    //$url_tpv = 'https://nemeduran04.github.io/JNL/pago/index.php';
     //$url_tpv = 'https://sis-t.redsys.es:25443/sis/realizarPago';
     $version = "HMAC_SHA256_V1"; 
     $clave = 'sq7HjrUOBfKmC576ILgskD5srU870gJ7'; //poner la clave SHA-256
@@ -83,9 +83,9 @@ if (isset($_POST['submitPayment'])) {
     $consumerlng = '001';
     $transactionType = '0';
     //$urlMerchant = 'https://www.jose-aguilar.com/scripts/php/redsys-pago-con-tarjeta/'; //cambiar este dato
-    $urlMerchant = 'http://localhost/pago/index.php'; //cambiar este dato
-    $urlweb_ok = 'http://localhost/JNL/pago/tpv_ok.php'; //cambiar este dato
-    $urlweb_ko = 'http://localhost/JNL/pago/tpv_ko.php'; //cambiar este dato
+    $urlMerchant = 'https://nemeduran04.github.io/JNL/index.php'; //cambiar este dato
+    $urlweb_ok = 'https://nemeduran04.github.io/JNL/pago/tpv_ok.php'; //cambiar este dato
+    $urlweb_ko = 'https://nemeduran04.github.io/JNL/pago/tpv_ko.php'; //cambiar este dato
 
     $miObj->setParameter("DS_MERCHANT_AMOUNT", $amount);
     $miObj->setParameter("DS_MERCHANT_CURRENCY", $currency);
